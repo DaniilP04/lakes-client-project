@@ -10,8 +10,8 @@ export default async function WaterBodyPage({ params }: { params: Promise<{ id: 
     <ProtectedShell>
       <div className="stack">
         <PageHeader
-          title="Дашборд водоёма"
-          description="Паспорт, таблица записей и график по выбранному году и параметру."
+          title="Аналитика водоёма"
+          description="Просмотр паспорта объекта, истории измерений и графика по выбранному параметру."
           action={
             <Link className="btn secondary" href="/water-bodies">
               Назад к карте

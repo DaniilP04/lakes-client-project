@@ -14,6 +14,7 @@ export function ProtectedShell({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const token = authStorage.getAccessToken();
+
     if (!token) {
       router.replace('/login');
       return;
@@ -32,7 +33,17 @@ export function ProtectedShell({ children }: { children: ReactNode }) {
   }, [router]);
 
   if (!ready) {
-    return <div className="centered">Проверка авторизации...</div>;
+    return (
+      <div className="auth-check-screen">
+        <div className="auth-check-card">
+          <div className="auth-check-spinner" />
+          <h2 className="auth-check-title">Проверка авторизации</h2>
+          <p className="auth-check-text">
+            Подождите немного, система проверяет доступ к защищённой странице.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   return (

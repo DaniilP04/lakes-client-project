@@ -23,7 +23,10 @@ export default function ProfilePage() {
   return (
     <ProtectedShell>
       <div className="stack">
-        <PageHeader title="Личный кабинет" description="Просмотр данных текущего пользователя и его аватарки." />
+        <PageHeader
+          title="Личный кабинет"
+          description="Просмотр данных текущего пользователя, роли и базовой информации о профиле."
+        />
 
         {loading ? <div className="card">Загрузка профиля...</div> : null}
         {error ? <div className="card">{error}</div> : null}
@@ -44,7 +47,7 @@ export default function ProfilePage() {
               <div><strong>Логин:</strong> {user.login || '—'}</div>
               <div><strong>Email:</strong> {user.email}</div>
               <div><strong>Роль:</strong> {user.role}</div>
-              <div><strong>Аватар:</strong> {user.avatarUrl || 'Используется fallback с инициалами'}</div>
+              <div><strong>Аватар:</strong> {user.avatarUrl || 'Используется стандартный fallback с инициалами'}</div>
             </div>
           </section>
         ) : null}

@@ -35,9 +35,11 @@ export default function LoginPage() {
     <div className="auth-page">
       <div className="auth-card stack">
         <div>
-          <div className="eyebrow">Клиентская сторона</div>
-          <h1 className="auth-title">Вход в Lakes Client</h1>
-          <p className="muted">Просматривайте озёра, карту, паспорт водоёма и все доступные измерения.</p>
+          <div className="eyebrow">Lakes Client</div>
+          <h1 className="auth-title">Вход в систему</h1>
+          <p className="muted">
+            Авторизуйтесь, чтобы открыть карту водоёмов, профиль и страницу аналитики по озёрам.
+          </p>
         </div>
 
         <form className="stack" onSubmit={handleSubmit}>

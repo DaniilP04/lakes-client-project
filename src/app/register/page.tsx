@@ -43,9 +43,11 @@ export default function RegisterPage() {
     <div className="auth-page">
       <div className="auth-card stack">
         <div>
-          <div className="eyebrow">Новый клиент</div>
+          <div className="eyebrow">Новый пользователь</div>
           <h1 className="auth-title">Регистрация</h1>
-          <p className="muted">Регистрация отправляет роль CLIENT и не содержит административных сценариев.</p>
+          <p className="muted">
+            Создайте клиентский аккаунт, чтобы просматривать карту озёр, профиль и данные по водоёмам.
+          </p>
         </div>
 
         <form className="stack" onSubmit={handleSubmit}>

@@ -7,8 +7,8 @@ export default function WaterBodiesPage() {
     <ProtectedShell>
       <div className="stack">
         <PageHeader
-          title="Озёра"
-          description="Карта MapLibre со всеми водоёмами из базы данных, выбор через карту или dropdown."
+          title="Карта озёр"
+          description="Просматривайте водоёмы на интерактивной карте, выбирайте объект и переходите к его подробной аналитике."
         />
         <WaterBodiesExplorer />
       </div>
